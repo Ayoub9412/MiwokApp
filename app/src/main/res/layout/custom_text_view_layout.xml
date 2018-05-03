@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/custom_TextView_With_Image"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="88dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#FD8E09"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/elementImageView"
+        android:layout_width="0dp"
+        android:layout_height="88dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitCenter"
+        android:background="#FFF7DA"
+        android:layout_gravity="left"
+        android:layout_weight="0.25"
+        />
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="0.55">
+
+        <TextView
+            android:id="@+id/headerTextView"
+            style="@style/custom_Header_Text_View"
+            android:text="Test"
+            />
+
+        <TextView
+            android:id="@+id/subTextView"
+            style="@style/custom_SubItem_Text_View"
+            android:text="Test"
+            />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/playButton"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:src="@mipmap/ic_play_arrow"
+        android:layout_weight="0.2"
+        android:layout_gravity="center_vertical|right"
+        android:scaleType="fitCenter" />
+
+
+</LinearLayout>
